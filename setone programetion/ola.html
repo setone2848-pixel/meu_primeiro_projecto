@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <input type="tel" placeholder="DIGITE A PERIMEIRA NOTA" id="n1">
+    <br><br>
+    <input type="tel" placeholder="DIGITE A SEGUNDA NOTA" id="n2">
+    <br><br>
+    <input type="tel" placeholder="DIGITE A SEGUNDA NOTA" id="n3">
+    <br><br>
+    
+    <button onclick="btn()">VER MEDIA</button>
+    <br><br>
+    <div class="media" id="media">MEDIA</div>
+    </center>
+    
+    <script>
+        function btn(){
+           
+           const inp1 = document.getElementById('n1').value;
+           const inp2 = document.getElementById('n2').value;
+           const inp3 = document.getElementById('n3').value;
+           const med = document.querySelector('media');
+            
+           
+          med = (inp1 + inp2 + inp3)/3;
+     
+        }
+    </script>
+</body>
+</html>

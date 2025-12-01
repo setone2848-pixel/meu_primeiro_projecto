@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.img {
+  width: 100%;
+  height: 900px;
+  background-size: cover;
+  animation: trocarImg 4s infinite alternate;
+  
+}
+
+@keyframes trocarImg {
+  0% {
+    background-image: url('img/side-view-man-with-virtual-reality-headset-copy-space.jpg') ;
+    
+  }
+  100% {
+    background-image: url('img/african-american-woman-experiencing-vr-simulation.jpg');
+    background-color: url('img/Logo\ SETONE\ com\ ícone\ estilizado\ \(1\).png');
+  }
+ 
+}
+
+.text{
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+#inf{
+  text-shadow: 5px 1px 1px;
+  font-size: 50px;
+}
+.btn{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+ 
+  margin-left: 88%;
+  border-radius: 10px;
+  animation: btn 4s infinite;
+}
+@keyframes btn {
+  0%{
+    background-color: rgba(0, 0, 255, 0.603);
+  }
+  100%{
+    background-color: rgba(0, 128, 0, 0.514);
+  }
+  
+}
+.btn{
+  animation: btn 2s ease-out;
+  background-color: rgba(0, 0, 255, 0.5);
+  transition: background 2s;
+}
+.btn:hover{
+  transform: scale(1);
+  cursor: pointer;
+  background-color: aliceblue;
+  transform: background 2s;
+}
+/*@keyframes btn {
+  from{
+    transform: scale(0) ;
+    opacity: 1;
+  }
+  to{
+    transform: scale(0.5);
+    opacity: 2;
+  }
+  
+}
+*/
+.im{
+  padding: 5%;
+  width: 20%;
+  align-items: center;
+  text-align: center;
+  border-radius: 5%;
+  height: 30%;
+}
+header{
+  position: absolute;
+  font-family: monospace;
+  text-align: center;
+  align-items: center;
+ margin: auto;
+ background-color: rgba(255, 255, 255, 0.815);
+ padding: 2%;
+}
+main, nav{
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  display: inline;
+
+
+}
+li{
+  display: block;
+  display: inline;
+  align-items: center;
+  text-align: center;
+ 
+}
+a{
+  display: block;
+  display: inline;
+  
+}
+</style>
+</head>
+<body>
+  <center>
+  <header style="text-align: center; align-items: center;">
+    <nav>
+      <main>
+        <li><a href="#">INFORMAÇÃO</a></li>
+        <li><a href="#">SERVIÇO</a></li>
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">SETONE!</a></li>
+      </main>
+    </nav>
+  </header>
+  </center>
+  <hr style="position: absolute;">
+ <div class="but"><button class="btn" onclick="btn()">ENTRAR</button></div>
+  <center>
+<div class="text"><h1 id="inf">TRANSFORMA O SEU FUTORO AQUI NA <br> <em>SETONE</em></h1> </div>
+  </center>
+<div class="img"></div>
+<div class="set">
+  <img src="img/Logo SETONE com ícone estilizado (1).png" alt="" class="im" style="border-radius: 20px;">
+</div>
+<script>
+  function btn(){
+ locale.window.href = 'ola.html';
+  }
+</script>
+</body>
+</html>
